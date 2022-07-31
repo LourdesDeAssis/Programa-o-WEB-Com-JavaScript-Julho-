@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 04</title>
+    
+    <meta charset='UTF-8'>
+  </head>
+  <body>
+    <h2>4) As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes. Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+   * salários até R$ 280,00 (incluindo) : aumento de 20%
+   * salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+   * salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+
+   - o salário antes do reajuste;
+   - o percentual de aumento aplicado;
+   - o valor do aumento;
+   - o novo salário, após o aumento </h2>
+
+    <script type="text/javascript">
+      
+      salario=Number(prompt("Informe o seu salário: "));
+      document.write(salario+ " é seu salário antes do reajuste <br>");
+
+      if (salario<=280){
+        novosalario=salario+(salario*2/10);
+        document.write("20% é o percentual de aumento aplicado <br>");
+        document.write(aumento+ " é o valor do aumento <br>");
+      }
+      else if(280<salario && salario<=700){
+        novosalario=salario+(salario*15/100);
+        aumento=(salario*15/100);
+        document.write("15% é o percentual de aumento aplicado <br>");
+        document.write( aumento+ " é o valor do aumento <br>");        
+      }
+      else if(700<salario && salario<=1500){
+        novosalario=salario+(salario*10/100);
+        aumento=(salario*10/100);
+        document.write("10% é o percentual de aumento aplicado <br>");
+        document.write(aumento+ " é o valor do aumento <br>");        
+      }
+      else 
+      {
+        novosalario=salario+(salario*5/100);
+        aumento=(salario*5/100);
+        document.write("5% é o percentual de aumento aplicado <br>");
+        document.write(aumento+ " é o valor do aumento <br>");
+      } 
+
+      document.write(novosalario+ " é o seu novo salário");
+
+    </script>
+  </body>
+</html>

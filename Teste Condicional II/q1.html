@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 01</title>
+    
+    <meta charset='UTF-8'>
+  </head>
+  <body>
+  	<h2> 1) Faça um Programa que peça um número inteiro e determine se ele é par ou impar. Dica: utilize o operador módulo (resto da divisão) </h2>
+
+    <script type="text/javascript">
+      impar=0;
+      par=0;
+      for(i=0; i<10; i++){
+        n=Number(prompt("Informe a quantidade de números: "));
+        if(n%2!=0){
+          impar++;
+          document.write(n+ " é impar <br>");
+        }else{
+          par++;
+          document.write(n+ " é par <br>");
+        }
+      }
+
+      document.write("A quantidade de números pares: ");
+      document.write(par+ ".");
+      document.write("<br> A quantidade de números impares: ");
+      document.write(impar+ ".");
+
+
+
+		</script>
+  </body>
+</html>
