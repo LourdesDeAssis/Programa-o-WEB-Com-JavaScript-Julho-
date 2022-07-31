@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 03</title>
+    
+    <meta charset='UTF-8'>
+  </head>
+  <body>
+  	<h2> 3) Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.</h2>
+
+    <script type="text/javascript">
+      n=Number(prompt("Informe um valor entre zero e dez: "));
+
+    
+      while(n<0 || n>10){
+          n=Number(prompt("Valor Invalido. Informe novamente: "));
+
+      }
+
+      
+      document.write(n+ " é um valor válido");
+
+		</script>
+  </body>
+</html>

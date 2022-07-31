@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 03</title>
+    
+    <meta charset='UTF-8'>
+  </head>
+  <body>
+  	<h2> 2) A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,... Faça um programa capaz de gerar a série até o n−ésimo termo. </h2>
+
+    <script type="text/javascript">
+      n=Number(prompt("Informe a quantidade de notas: "));
+      ultimo=1;
+      penultimo=1;
+
+      if(n==1 || n==2){
+
+        document.write("1");
+
+      }else{
+
+        document.write("1 <br> 1 <br>");
+        for(i=0; i<n; i++){
+
+          termo = ultimo + penultimo;
+          penultimo = ultimo;
+          ultimo = termo;
+          document.write(termo+ "<br>");
+
+        }
+      }
+      
+		</script>
+  </body>
+</html>
